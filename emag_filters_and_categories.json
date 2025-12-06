@@ -1,0 +1,804 @@
+{
+  "categories": [
+    {
+      "name": "Treninguri lifestyle",
+      "url": "https://www.emag.ro/label/treninguri-lifestyle-barbati/imbracaminte-el-vh/c?ref=category_panel_1_3885"
+    },
+    {
+      "name": "Blugi barbati",
+      "url": "https://www.emag.ro/label/blugi-barbati/imbracaminte-el-vh/c?ref=category_panel_2_2380"
+    },
+    {
+      "name": "Tricouri barbati",
+      "url": "https://www.emag.ro/label/tricouri-barbati/imbracaminte-el-vh/c?ref=category_panel_3_2374"
+    },
+    {
+      "name": "Camasi barbati",
+      "url": "https://www.emag.ro/label/camasi-barbati/imbracaminte-el-vh/c?ref=category_panel_4_2377"
+    },
+    {
+      "name": "Pijamale barbati",
+      "url": "https://www.emag.ro/label/pijamale-barbati/imbracaminte-el-vh/c?ref=category_panel_5_2270"
+    },
+    {
+      "name": "Hanorace barbati",
+      "url": "https://www.emag.ro/label/hanorace-barbati/imbracaminte-el-vh/c?ref=category_panel_6_2376"
+    },
+    {
+      "name": "Pantaloni barbati",
+      "url": "https://www.emag.ro/label/pantaloni-barbati/imbracaminte-el-vh/c?ref=category_panel_7_2379"
+    },
+    {
+      "name": "Treninguri lifestyle",
+      "url": "https://www.emag.ro/label/treninguri-lifestyle-barbati/imbracaminte-el-vh/c?ref=search_category_1"
+    },
+    {
+      "name": "Blugi barbati",
+      "url": "https://www.emag.ro/label/blugi-barbati/imbracaminte-el-vh/c?ref=search_category_2"
+    },
+    {
+      "name": "Tricouri barbati",
+      "url": "https://www.emag.ro/label/tricouri-barbati/imbracaminte-el-vh/c?ref=search_category_3"
+    },
+    {
+      "name": "Camasi barbati",
+      "url": "https://www.emag.ro/label/camasi-barbati/imbracaminte-el-vh/c?ref=search_category_4"
+    },
+    {
+      "name": "Pijamale barbati",
+      "url": "https://www.emag.ro/label/pijamale-barbati/imbracaminte-el-vh/c?ref=search_category_5"
+    },
+    {
+      "name": "Hanorace barbati",
+      "url": "https://www.emag.ro/label/hanorace-barbati/imbracaminte-el-vh/c?ref=search_category_6"
+    },
+    {
+      "name": "Pantaloni barbati",
+      "url": "https://www.emag.ro/label/pantaloni-barbati/imbracaminte-el-vh/c?ref=search_category_7"
+    }
+  ],
+  "filters": {
+    "Timp de livrare estimat": [
+      {
+        "label": "Livrare estimata azi",
+        "value_id": "1",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/timp-de-livrare-estimat-f9998,delivery-estimate-1-v1/imbracaminte-el-vh",
+        "count": 0
+      },
+      {
+        "label": "Livrare estimata pana maine",
+        "value_id": "2",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/timp-de-livrare-estimat-f9998,delivery-estimate-2-v2/imbracaminte-el-vh",
+        "count": 0
+      },
+      {
+        "label": "Livrare estimata pana poimaine",
+        "value_id": "3",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/timp-de-livrare-estimat-f9998,delivery-estimate-3-v3/imbracaminte-el-vh",
+        "count": 0
+      }
+    ],
+    "Pentru": [
+      {
+        "label": "Barbati",
+        "value_id": "32",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/pentru-f9777,barbati-v32/imbracaminte-el-vh",
+        "count": 492868
+      },
+      {
+        "label": "Femei",
+        "value_id": "31",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/pentru-f9777,femei-v31/imbracaminte-el-vh",
+        "count": 8613
+      },
+      {
+        "label": "Fete",
+        "value_id": "34",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/pentru-f9777,fete-v34/imbracaminte-el-vh",
+        "count": 1
+      },
+      {
+        "label": "Baieti",
+        "value_id": "33",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/pentru-f9777,baieti-v33/imbracaminte-el-vh",
+        "count": 1
+      }
+    ],
+    "eMAG Genius": [
+      {
+        "label": "Toate produsele",
+        "value_id": "21",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/emag-genius-f9538,toate-produsele-v21/imbracaminte-el-vh",
+        "count": 441567
+      },
+      {
+        "label": "Livrate de eMAG",
+        "value_id": "30",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/emag-genius-f9538,livrate-de-emag-v30/imbracaminte-el-vh",
+        "count": 99183
+      }
+    ],
+    "Produse la oferta": [
+      {
+        "label": "Oferte",
+        "value_id": "45",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/produse-la-oferta-f9977,oferte-v45/imbracaminte-el-vh",
+        "count": 190405
+      }
+    ],
+    "Pret": [
+      {
+        "label": "Sub 50",
+        "value_id": "0-50",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-0-si-50/imbracaminte-el-vh",
+        "count": 95622
+      },
+      {
+        "label": "50 - 100",
+        "value_id": "50-100",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-50-si-100/imbracaminte-el-vh",
+        "count": 131527
+      },
+      {
+        "label": "100 - 200",
+        "value_id": "100-200",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-100-si-200/imbracaminte-el-vh",
+        "count": 160575
+      },
+      {
+        "label": "200 - 500",
+        "value_id": "200-500",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-200-si-500/imbracaminte-el-vh",
+        "count": 96497
+      },
+      {
+        "label": "500 - 1.000",
+        "value_id": "500-1000",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-500-si-1000/imbracaminte-el-vh",
+        "count": 11488
+      },
+      {
+        "label": "1.000 - 1.500",
+        "value_id": "1000-1500",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-1000-si-1500/imbracaminte-el-vh",
+        "count": 998
+      },
+      {
+        "label": "1.500 - 2.000",
+        "value_id": "1500-2000",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-1500-si-2000/imbracaminte-el-vh",
+        "count": 388
+      },
+      {
+        "label": "2.000 - 3.000",
+        "value_id": "2000-3000",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-2000-si-3000/imbracaminte-el-vh",
+        "count": 272
+      },
+      {
+        "label": "3.000 - 4.000",
+        "value_id": "3000-4000",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-3000-si-4000/imbracaminte-el-vh",
+        "count": 103
+      },
+      {
+        "label": "4.000 - 5.000",
+        "value_id": "4000-5000",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-4000-si-5000/imbracaminte-el-vh",
+        "count": 12
+      },
+      {
+        "label": "Peste 5.000",
+        "value_id": "5000-99999999",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-5000-si-99999999/imbracaminte-el-vh",
+        "count": 20
+      },
+      {
+        "label": "2 - 14.433",
+        "value_id": "2-14433",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/pret,intre-2-si-14433/imbracaminte-el-vh",
+        "count": 164415
+      }
+    ],
+    "Disponibilitate": [
+      {
+        "label": "In Stoc",
+        "value_id": "stock",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/stoc/imbracaminte-el-vh",
+        "count": 470920
+      },
+      {
+        "label": "Noutati",
+        "value_id": "news",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/noutati/imbracaminte-el-vh",
+        "count": 31559
+      },
+      {
+        "label": "eMAG Deschide Romania",
+        "value_id": "emag-deschide-romania",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/emag-deschide-romania/imbracaminte-el-vh",
+        "count": 18021
+      }
+    ],
+    "Super Pret": [
+      {
+        "label": "Produse la Super Pret",
+        "value_id": "38",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/super-pret-f9902,produse-la-super-pret-v38/imbracaminte-el-vh",
+        "count": 31601
+      },
+      {
+        "label": "Top Favorite",
+        "value_id": "40",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/super-pret-f9902,top-favorite-v40/imbracaminte-el-vh",
+        "count": 150
+      }
+    ],
+    "Brand": [
+      {
+        "label": "CRI-FLO",
+        "value_id": "560278",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/cri-flo/imbracaminte-el-vh",
+        "count": 85786
+      },
+      {
+        "label": "D&B",
+        "value_id": "55024",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/d-b/imbracaminte-el-vh",
+        "count": 33601
+      },
+      {
+        "label": "MALFINI",
+        "value_id": "111496",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/malfini/imbracaminte-el-vh",
+        "count": 24266
+      },
+      {
+        "label": "KOTON",
+        "value_id": "62821",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/koton/imbracaminte-el-vh",
+        "count": 12557
+      },
+      {
+        "label": "Jack & Jones",
+        "value_id": "31428",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/jack-jones/imbracaminte-el-vh",
+        "count": 8500
+      },
+      {
+        "label": "COLIN'S",
+        "value_id": "486454",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/colins/imbracaminte-el-vh",
+        "count": 7667
+      },
+      {
+        "label": "Gildan",
+        "value_id": "61642",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/gildan/imbracaminte-el-vh",
+        "count": 7429
+      },
+      {
+        "label": "BOSS",
+        "value_id": "437095",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/boss/imbracaminte-el-vh",
+        "count": 5175
+      },
+      {
+        "label": "AC&Co",
+        "value_id": "362587",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/ac-co/imbracaminte-el-vh",
+        "count": 5008
+      },
+      {
+        "label": "Puma",
+        "value_id": "4866",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/brand/puma/imbracaminte-el-vh",
+        "count": 4956
+      }
+    ],
+    "Rating minim": [
+      {
+        "label": "5",
+        "value_id": "5-5",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/rating,star-5/imbracaminte-el-vh",
+        "count": 24849
+      },
+      {
+        "label": "4",
+        "value_id": "4-5",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/rating,star-4/imbracaminte-el-vh",
+        "count": 40837
+      },
+      {
+        "label": "3",
+        "value_id": "3-5",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/rating,star-3/imbracaminte-el-vh",
+        "count": 45943
+      },
+      {
+        "label": "2",
+        "value_id": "2-5",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/rating,star-2/imbracaminte-el-vh",
+        "count": 47223
+      },
+      {
+        "label": "1",
+        "value_id": "1-5",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/rating,star-1/imbracaminte-el-vh",
+        "count": 48854
+      }
+    ],
+    "Disponibil prin easybox": [
+      {
+        "label": "Da",
+        "value_id": "1",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/disponibil-prin-easybox-f9098,da-v1/imbracaminte-el-vh",
+        "count": 460281
+      }
+    ],
+    "Culoare": [
+      {
+        "label": "Bronz",
+        "value_id": "30353",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,bronz-v30353/imbracaminte-el-vh",
+        "count": 342
+      },
+      {
+        "label": "Transparent",
+        "value_id": "30354",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,transparent-v30354/imbracaminte-el-vh",
+        "count": 311
+      },
+      {
+        "label": "Multicolor",
+        "value_id": "30355",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,multicolor-v30355/imbracaminte-el-vh",
+        "count": 22898
+      },
+      {
+        "label": "Argintiu",
+        "value_id": "30356",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,argintiu-v30356/imbracaminte-el-vh",
+        "count": 352
+      },
+      {
+        "label": "Auriu",
+        "value_id": "30357",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,auriu-v30357/imbracaminte-el-vh",
+        "count": 714
+      },
+      {
+        "label": "Negru",
+        "value_id": "30358",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,negru-v30358/imbracaminte-el-vh",
+        "count": 116369
+      },
+      {
+        "label": "Alb",
+        "value_id": "30359",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,alb-v30359/imbracaminte-el-vh",
+        "count": 102392
+      },
+      {
+        "label": "Gri",
+        "value_id": "30360",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,gri-v30360/imbracaminte-el-vh",
+        "count": 24225
+      },
+      {
+        "label": "Maro",
+        "value_id": "30361",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,maro-v30361/imbracaminte-el-vh",
+        "count": 6762
+      },
+      {
+        "label": "Bej (Nude)",
+        "value_id": "30362",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,bej-nude-v30362/imbracaminte-el-vh",
+        "count": 5806
+      },
+      {
+        "label": "Roz",
+        "value_id": "30363",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,roz-v30363/imbracaminte-el-vh",
+        "count": 2223
+      },
+      {
+        "label": "Mov",
+        "value_id": "30364",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,mov-v30364/imbracaminte-el-vh",
+        "count": 2371
+      },
+      {
+        "label": "Albastru",
+        "value_id": "30365",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,albastru-v30365/imbracaminte-el-vh",
+        "count": 50040
+      },
+      {
+        "label": "Verde",
+        "value_id": "30366",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,verde-v30366/imbracaminte-el-vh",
+        "count": 20127
+      },
+      {
+        "label": "Galben",
+        "value_id": "30367",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,galben-v30367/imbracaminte-el-vh",
+        "count": 2898
+      },
+      {
+        "label": "Portocaliu",
+        "value_id": "30368",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,portocaliu-v30368/imbracaminte-el-vh",
+        "count": 2813
+      },
+      {
+        "label": "Rosu",
+        "value_id": "30369",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/culoare-f9700,rosu-v30369/imbracaminte-el-vh",
+        "count": 13098
+      }
+    ],
+    "Material": [
+      {
+        "label": "Bumbac",
+        "value_id": "28195",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,bumbac-v28195/imbracaminte-el-vh",
+        "count": 415951
+      },
+      {
+        "label": "Sintetic",
+        "value_id": "28204",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,sintetic-v28204/imbracaminte-el-vh",
+        "count": 98498
+      },
+      {
+        "label": "Bumbac organic",
+        "value_id": "30146",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,bumbac-organic-v30146/imbracaminte-el-vh",
+        "count": 19343
+      },
+      {
+        "label": "Denim",
+        "value_id": "28186",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,denim-v28186/imbracaminte-el-vh",
+        "count": 11658
+      },
+      {
+        "label": "Viscoza",
+        "value_id": "28206",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,viscoza-v28206/imbracaminte-el-vh",
+        "count": 7693
+      },
+      {
+        "label": "In",
+        "value_id": "28190",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,in-v28190/imbracaminte-el-vh",
+        "count": 4258
+      },
+      {
+        "label": "Lana",
+        "value_id": "28182",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,lana-v28182/imbracaminte-el-vh",
+        "count": 3862
+      },
+      {
+        "label": "Modal",
+        "value_id": "28205",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,modal-v28205/imbracaminte-el-vh",
+        "count": 2002
+      },
+      {
+        "label": "Sustenabil",
+        "value_id": "31000",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,sustenabil-v31000/imbracaminte-el-vh",
+        "count": 1575
+      },
+      {
+        "label": "Lyocell",
+        "value_id": "28192",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,lyocell-v28192/imbracaminte-el-vh",
+        "count": 1464
+      },
+      {
+        "label": "Acril",
+        "value_id": "30147",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,acril-v30147/imbracaminte-el-vh",
+        "count": 659
+      },
+      {
+        "label": "Bambus",
+        "value_id": "30153",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,bambus-v30153/imbracaminte-el-vh",
+        "count": 623
+      },
+      {
+        "label": "Fleece",
+        "value_id": "28199",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,fleece-v28199/imbracaminte-el-vh",
+        "count": 419
+      },
+      {
+        "label": "Catifea",
+        "value_id": "28196",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,catifea-v28196/imbracaminte-el-vh",
+        "count": 227
+      },
+      {
+        "label": "Tricot",
+        "value_id": "28197",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,tricot-v28197/imbracaminte-el-vh",
+        "count": 211
+      },
+      {
+        "label": "Matase",
+        "value_id": "28185",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,matase-v28185/imbracaminte-el-vh",
+        "count": 141
+      },
+      {
+        "label": "Jerseu",
+        "value_id": "28198",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,jerseu-v28198/imbracaminte-el-vh",
+        "count": 121
+      },
+      {
+        "label": "Microfibra",
+        "value_id": "30145",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,microfibra-v30145/imbracaminte-el-vh",
+        "count": 74
+      },
+      {
+        "label": "Casmir",
+        "value_id": "28183",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,casmir-v28183/imbracaminte-el-vh",
+        "count": 50
+      },
+      {
+        "label": "Satin",
+        "value_id": "28194",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,satin-v28194/imbracaminte-el-vh",
+        "count": 39
+      },
+      {
+        "label": "Pique",
+        "value_id": "28201",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,pique-v28201/imbracaminte-el-vh",
+        "count": 36
+      },
+      {
+        "label": "Reiat",
+        "value_id": "28209",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,reiat-v28209/imbracaminte-el-vh",
+        "count": 31
+      },
+      {
+        "label": "Piele naturala",
+        "value_id": "28187",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,piele-naturala-v28187/imbracaminte-el-vh",
+        "count": 17
+      },
+      {
+        "label": "Piele ecologica",
+        "value_id": "28352",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,piele-ecologica-v28352/imbracaminte-el-vh",
+        "count": 10
+      },
+      {
+        "label": "Ramie",
+        "value_id": "30151",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,ramie-v30151/imbracaminte-el-vh",
+        "count": 4
+      },
+      {
+        "label": "Neopren",
+        "value_id": "28202",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,neopren-v28202/imbracaminte-el-vh",
+        "count": 3
+      },
+      {
+        "label": "Stofa",
+        "value_id": "28200",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/filter/material-f8460,stofa-v28200/imbracaminte-el-vh",
+        "count": 3
+      }
+    ],
+    "Livrat de": [
+      {
+        "label": "eMAG",
+        "value_id": "1",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/emag/imbracaminte-el-vh",
+        "count": 99201
+      },
+      {
+        "label": "Cri-flo Car Delivery Smd",
+        "value_id": "76051",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/criflpie/imbracaminte-el-vh",
+        "count": 106425
+      },
+      {
+        "label": "DRINKS&BRANDS KFT",
+        "value_id": "204337",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/drinkmsf/imbracaminte-el-vh",
+        "count": 33601
+      },
+      {
+        "label": "MODIVO SA",
+        "value_id": "222659",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/modivyep/imbracaminte-el-vh",
+        "count": 27343
+      },
+      {
+        "label": "CADIBO",
+        "value_id": "68843",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/cadibdlx/imbracaminte-el-vh",
+        "count": 19697
+      },
+      {
+        "label": "Mac Sport Web",
+        "value_id": "75216",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/macspxbp/imbracaminte-el-vh",
+        "count": 16765
+      },
+      {
+        "label": "Fashion Epic Shop",
+        "value_id": "109597",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/fshneoxe/imbracaminte-el-vh",
+        "count": 14904
+      },
+      {
+        "label": "SC DIAL DOCUMENT SRL",
+        "value_id": "11091",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/dialbzsa/imbracaminte-el-vh",
+        "count": 11343
+      },
+      {
+        "label": "Haine Shop",
+        "value_id": "11034",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/iilefbyw/imbracaminte-el-vh",
+        "count": 9009
+      },
+      {
+        "label": "MARKETPLACE SOCIETY",
+        "value_id": "58959",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/vendor/onpnsoah/imbracaminte-el-vh",
+        "count": 8470
+      }
+    ],
+    "Disponibil in showroom": [
+      {
+        "label": "Stoc Baneasa",
+        "value_id": "baneasa",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/stoc_baneasa/imbracaminte-el-vh",
+        "count": 4
+      },
+      {
+        "label": "Stoc Craiova",
+        "value_id": "craiova",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/stoc_craiova/imbracaminte-el-vh",
+        "count": 4
+      },
+      {
+        "label": "Stoc Crangasi",
+        "value_id": "crangasi",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/stoc_crangasi/imbracaminte-el-vh",
+        "count": 9
+      },
+      {
+        "label": "Stoc Galati Shopping City",
+        "value_id": "galati_shopping_city",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/stoc_galati_shopping_city/imbracaminte-el-vh",
+        "count": 2
+      },
+      {
+        "label": "Stoc Ploiesti Afi",
+        "value_id": "ploiesti_afi",
+        "url_base": "https://www.emag.ro",
+        "url_path": "/label/stoc_ploiesti_afi/imbracaminte-el-vh",
+        "count": 2
+      }
+    ]
+  }
+}
