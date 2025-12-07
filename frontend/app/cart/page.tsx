@@ -127,7 +127,7 @@ export default function CartPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
           <p className="text-gray-600">Loading cart...</p>
         </div>
       </div>
@@ -190,7 +190,7 @@ export default function CartPage() {
                         <h3 className="font-semibold text-lg mb-1">{item.productName}</h3>
                         <p className="text-gray-600 text-sm mb-2">{item.companyName}</p>
                         {item.price !== null && item.price !== undefined && typeof item.price === 'number' && (
-                          <p className="text-xl font-bold text-blue-600 mb-3">
+                          <p className="text-xl font-bold text-purple-600 mb-3">
                             {item.price.toFixed(2)} RON
                           </p>
                         )}
@@ -244,11 +244,11 @@ export default function CartPage() {
                   <div className="border-t pt-4">
                     <div className="flex justify-between text-xl font-bold mb-4">
                       <span>Total:</span>
-                      <span className="text-blue-600">{total.toFixed(2)} RON</span>
+                      <span className="text-purple-600">{total.toFixed(2)} RON</span>
                     </div>
                     <Button
                       onClick={handleCheckout}
-                      className="w-full bg-blue-600 hover:bg-blue-700"
+                      className="w-full bg-purple-600 hover:bg-purple-700"
                       size="lg"
                     >
                       Proceed to Checkout

@@ -54,7 +54,7 @@ export default function ResultsPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
           <p className="text-gray-600">Loading results...</p>
         </div>
       </div>
@@ -136,7 +136,7 @@ export default function ResultsPage() {
                 <CardContent className="flex-1 flex flex-col justify-between">
                   <div className="space-y-3">
                     {product.price !== null && product.price !== undefined && typeof product.price === 'number' && (
-                      <div className="text-2xl font-bold text-blue-600">
+                      <div className="text-2xl font-bold text-purple-600">
                         {product.price.toFixed(2)} RON
                       </div>
                     )}
@@ -156,7 +156,7 @@ export default function ResultsPage() {
                         <Button
                           size="sm"
                           onClick={() => addToCart(product)}
-                          className="bg-blue-600 hover:bg-blue-700"
+                          className="bg-purple-600 hover:bg-purple-700"
                         >
                           <ShoppingCart className="mr-2 h-4 w-4" />
                           Add to Cart

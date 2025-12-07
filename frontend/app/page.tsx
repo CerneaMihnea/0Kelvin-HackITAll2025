@@ -209,7 +209,7 @@ export default function Home() {
         <div className="w-1/2 border-r border-gray-200 flex flex-col bg-white overflow-hidden">
           <div className="p-4 border-b border-gray-200 flex-shrink-0 flex items-center justify-between">
             <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-              <Bot className="h-5 w-5 text-blue-600" />
+              <Bot className="h-5 w-5 text-purple-600" />
               AI Shopping Assistant
             </h2>
             <Button
@@ -233,14 +233,14 @@ export default function Home() {
                 }`}
               >
                 {message.role === 'assistant' && (
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                    <Bot className="h-4 w-4 text-blue-600" />
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Bot className="h-4 w-4 text-purple-600" />
                   </div>
                 )}
                 <div
                   className={`max-w-[80%] rounded-lg px-4 py-2 ${
                     message.role === 'user'
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-purple-600 text-white'
                       : 'bg-gray-100 text-gray-900'
                   }`}
                 >
@@ -255,8 +255,8 @@ export default function Home() {
             ))}
             {loading && (
               <div className="flex gap-3 justify-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Bot className="h-4 w-4 text-blue-600" />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                  <Bot className="h-4 w-4 text-purple-600" />
                 </div>
                 <div className="bg-gray-100 rounded-lg px-4 py-2">
                   <Loader2 className="h-4 w-4 animate-spin text-gray-600" />
@@ -280,7 +280,7 @@ export default function Home() {
               <Button
                 type="submit"
                 disabled={loading || !prompt.trim()}
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-purple-600 hover:bg-purple-700"
               >
                 {loading ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
@@ -343,7 +343,7 @@ export default function Home() {
                             {product.companyName}
                           </CardDescription>
                           {product.price !== null && product.price !== undefined && typeof product.price === 'number' && (
-                            <p className="text-base font-bold text-blue-600 mb-1">
+                            <p className="text-base font-bold text-purple-600 mb-1">
                               {product.price.toFixed(2)} RON
                             </p>
                           )}
@@ -368,7 +368,7 @@ export default function Home() {
                               <Button
                                 size="sm"
                                 onClick={() => addToCart(product)}
-                                className="bg-blue-600 hover:bg-blue-700 h-7 px-2 text-xs"
+                                className="bg-purple-600 hover:bg-purple-700 h-7 px-2 text-xs"
                               >
                                 <ShoppingCart className="h-3 w-3" />
                               </Button>

@@ -150,7 +150,7 @@ export default function HistoryPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
           <p className="text-gray-600">Loading history...</p>
         </div>
       </div>
@@ -180,7 +180,7 @@ export default function HistoryPage() {
             </div>
             <Button
               onClick={saveSelection}
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-purple-600 hover:bg-purple-700"
             >
               Save Selection
             </Button>
@@ -194,7 +194,7 @@ export default function HistoryPage() {
             </h3>
             {loadingProducts ? (
               <div className="text-center py-12">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
                 <p className="text-gray-600">Loading products...</p>
               </div>
             ) : products.length === 0 ? (
@@ -244,7 +244,7 @@ export default function HistoryPage() {
                     <CardContent className="flex-1 flex flex-col justify-between">
                       <div className="space-y-3">
                         {product.price !== null && product.price !== undefined && typeof product.price === 'number' && (
-                          <div className="text-2xl font-bold text-blue-600">
+                          <div className="text-2xl font-bold text-purple-600">
                             {product.price.toFixed(2)} RON
                           </div>
                         )}
@@ -264,7 +264,7 @@ export default function HistoryPage() {
                             <Button
                               size="sm"
                               onClick={() => addToCart(product)}
-                              className="bg-blue-600 hover:bg-blue-700"
+                              className="bg-purple-600 hover:bg-purple-700"
                             >
                               <ShoppingCart className="mr-2 h-4 w-4" />
                               Add to Cart
@@ -300,7 +300,7 @@ export default function HistoryPage() {
                 <Card
                   key={item.id}
                   className={`cursor-pointer transition-all ${
-                    isSelected ? 'border-blue-500 bg-blue-50' : ''
+                    isSelected ? 'border-purple-500 bg-purple-50' : ''
                   }`}
                   onClick={() => toggleSelection(item.id)}
                 >
@@ -308,7 +308,7 @@ export default function HistoryPage() {
                     <div className="flex items-start gap-4">
                       <div className="mt-1">
                         {isSelected ? (
-                          <CheckSquare className="h-6 w-6 text-blue-600" />
+                          <CheckSquare className="h-6 w-6 text-purple-600" />
                         ) : (
                           <Square className="h-6 w-6 text-gray-400" />
                         )}
