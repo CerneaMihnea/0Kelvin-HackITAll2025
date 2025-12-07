@@ -273,7 +273,9 @@ def compute_credibility(profit, datorii, age):
         factor = 0.8 * f_s + 0.2 * a_s
         factor *= 100
         if factor > 100:
-            factor = 100
+            factor = 0
+        if factor < 0:
+            factor = 0
         return int(factor)
     except:
         return 0
