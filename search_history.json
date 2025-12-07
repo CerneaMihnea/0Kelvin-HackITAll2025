@@ -49,5 +49,89 @@
     "prompt": "vreau tricouri galbene si rosii",
     "productCount": 32,
     "timestamp": "2025-12-07T04:59:58.841168"
+  },
+  {
+    "id": 8,
+    "prompt": "vreau si eu tricouri rosii",
+    "productCount": 37,
+    "timestamp": "2025-12-07T05:05:16.692269"
+  },
+  {
+    "id": 9,
+    "prompt": "tricouri",
+    "productCount": 0,
+    "timestamp": "2025-12-07T05:10:54.287014"
+  },
+  {
+    "id": 10,
+    "prompt": "vreau tricouri verzi",
+    "productCount": 22,
+    "timestamp": "2025-12-07T05:19:13.068296"
+  },
+  {
+    "id": 11,
+    "prompt": "vreau tricou negru cu dungi",
+    "productCount": 13,
+    "timestamp": "2025-12-07T05:39:46.837463"
+  },
+  {
+    "id": 12,
+    "prompt": "vreau tricou alb cu dungi",
+    "productCount": 17,
+    "timestamp": "2025-12-07T05:41:14.834375"
+  },
+  {
+    "id": 13,
+    "prompt": "vreau un tricou alb cu dungi",
+    "productCount": 17,
+    "timestamp": "2025-12-07T05:47:32.119758"
+  },
+  {
+    "id": 14,
+    "prompt": "vreau tricou galben",
+    "productCount": 52,
+    "timestamp": "2025-12-07T05:48:34.555242"
+  },
+  {
+    "id": 15,
+    "prompt": "salut, vreau si eu sa cumpar tricouri rosi si verzi",
+    "productCount": 16,
+    "timestamp": "2025-12-07T05:51:00.185935"
+  },
+  {
+    "id": 16,
+    "prompt": "vreau un tricou alb cu dungi",
+    "productCount": 5,
+    "timestamp": "2025-12-07T06:08:50.371886"
+  },
+  {
+    "id": 17,
+    "prompt": "vreau un tricou alb cu dungi",
+    "productCount": 17,
+    "timestamp": "2025-12-07T06:14:03.607819"
+  },
+  {
+    "id": 18,
+    "prompt": "vreau un tricou alb",
+    "productCount": 0,
+    "timestamp": "2025-12-07T06:28:50.175648"
+  },
+  {
+    "id": 19,
+    "prompt": "i want a white t-shirt",
+    "productCount": 12,
+    "timestamp": "2025-12-07T06:30:01.494074"
+  },
+  {
+    "id": 20,
+    "prompt": "tricou alb",
+    "productCount": 12,
+    "timestamp": "2025-12-07T06:37:15.429013"
+  },
+  {
+    "id": 21,
+    "prompt": "vreau si eu pantaloni verzi",
+    "productCount": 5,
+    "timestamp": "2025-12-07T06:52:50.454434"
   }
 ]

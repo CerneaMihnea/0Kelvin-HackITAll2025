@@ -1,7 +1,7 @@
 import json
 import google.generativeai as genai
 
-API_KEY = "AIzaSyCuN7AOgZUarw5pX-io-V6_ZooxU9Wyo2g"
+API_KEY = "AIzaSyAhengV9JPXsRGYn-fV5kaV427QJQKOPoQ"
 genai.configure(api_key=API_KEY)
 
 def load_emag_data():
@@ -88,7 +88,7 @@ def ai_select_filters(user_prompt):
     emag_data = load_emag_data()
     prompt = build_ai_prompt(user_prompt, emag_data)
 
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash-lite")
     response = model.generate_content(prompt)
 
     # Extragere text corectă

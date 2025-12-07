@@ -20,7 +20,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend
 
 # Initialize Stripe (use environment variable in production)
-stripe.api_key = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51QJxXxXxXxXxXxXx')  # Replace with your Stripe secret key
+# IMPORTANT: Never commit your secret key to version control!
+# Set it via environment variable: export STRIPE_SECRET_KEY=sk_test_...
+stripe.api_key = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51SbXPE0K3XOps5QbrJJGSdqs8c8FMaE1sv69Dv6F0JxMNdfoXVyGDhPdjHy5sbXK1RfnmmaTQow3cjcUUxci4CON00IhmoaKv1')
 
 SEARCH_HISTORY_FILE = 'search_history.json'
 
@@ -364,6 +366,96 @@ def clean_num(text):
     return clean
 
 
+def extract_company_address(url, session):
+    """Extract company address from listafirme.ro page"""
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36'}
+    try:
+        response = session.get(url, headers=headers, timeout=10)
+        if response.status_code != 200:
+            return None
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Try to find address in various possible locations
+        # Common patterns: "Adresa:", "Adresă:", "Sediu:", etc.
+        address_labels = ["Adresa:", "Adresă:", "Sediu:", "Adresa sediului:"]
+        address = None
+        
+        for label in address_labels:
+            strong_tag = soup.find('strong', string=lambda text: text and label in text)
+            if strong_tag:
+                address = strong_tag.next_sibling
+                if address:
+                    address = address.strip()
+                    break
+        
+        # Alternative: look for address in structured data or specific divs
+        if not address:
+            # Try to find in company info section
+            info_section = soup.find('div', class_=lambda x: x and ('info' in x.lower() or 'company' in x.lower()))
+            if info_section:
+                address_elem = info_section.find(string=lambda text: text and any(label in text for label in address_labels))
+                if address_elem:
+                    parent = address_elem.find_parent()
+                    if parent:
+                        address = parent.get_text(strip=True)
+                        # Remove the label
+                        for label in address_labels:
+                            address = address.replace(label, '').strip()
+        
+        return address if address else None
+    except Exception as e:
+        print(f"Error extracting address: {e}")
+        return None
+
+
+def geocode_address(address):
+    """Convert address to coordinates using Google Maps Geocoding API"""
+    google_api_key = "AIzaSyBUye6mET-kClCa7j2cu6NhwqVDmO_aZEM"
+    if not google_api_key:
+        return None, None
+    
+    try:
+        geocode_url = "https://maps.googleapis.com/maps/api/geocode/json"
+        params = {
+            'address': address,
+            'key': google_api_key,
+            'region': 'ro'  # Romania
+        }
+        response = requests.get(geocode_url, params=params, timeout=5)
+        if response.status_code == 200:
+            data = response.json()
+            if data['status'] == 'OK' and data['results']:
+                location = data['results'][0]['geometry']['location']
+                return location['lat'], location['lng']
+        return None, None
+    except Exception as e:
+        print(f"Error geocoding address: {e}")
+        return None, None
+
+
+def calculate_distance(lat1, lon1, lat2, lon2):
+    """Calculate distance between two coordinates using Haversine formula (returns km)"""
+    from math import radians, sin, cos, sqrt, atan2
+    
+    if not all([lat1, lon1, lat2, lon2]):
+        return None
+    
+    # Convert to radians
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+    
+    # Haversine formula
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1-a))
+    
+    # Earth radius in km
+    R = 6371.0
+    distance = R * c
+    
+    return round(distance, 1)
+
+
 def get_latest_financials(url, session):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124 Safari/537.36'}
     try:
@@ -456,27 +548,41 @@ def process_url(product_info, companies_dict, links_dict, lock):
         with lock:
             links_dict[url] = name
             if name in companies_dict:
-                return url, name, companies_dict[name], product_name, product_image, product_price
+                company_data = companies_dict[name]
+                # Handle both old format (tuple) and new format (dict)
+                if isinstance(company_data, dict):
+                    is_valid = company_data.get('is_valid', False)
+                    score = company_data.get('score', 0)
+                    company_address = company_data.get('address')
+                else:
+                    # Old format: (is_valid, score) or (is_valid, score, address)
+                    is_valid = company_data[0] if len(company_data) > 0 else False
+                    score = company_data[1] if len(company_data) > 1 else 0
+                    company_address = company_data[2] if len(company_data) > 2 else None
+                return url, name, (is_valid, score), product_name, product_image, product_price, company_address
 
         lista_firme_url = create_company_site_url(name, code)
         financials = get_latest_financials(lista_firme_url, session)
+        
+        # Extract company address for distance calculation
+        company_address = extract_company_address(lista_firme_url, session)
 
         if financials is None:
             with lock:
-                companies_dict[name] = (False, 0)
-            return url, name, (False, 0), product_name, product_image, product_price
+                companies_dict[name] = {'is_valid': False, 'score': 0, 'address': company_address}
+            return url, name, (False, 0), product_name, product_image, product_price, company_address
 
         cifra_afaceri, active, nr_salariati, profit, datorii, age = financials
 
         if check_small_business(cifra_afaceri, active, nr_salariati):
             credibility = compute_credibility(profit, datorii, age)
             with lock:
-                companies_dict[name] = (True, credibility)
-            return url, name, (True, credibility), product_name, product_image, product_price
+                companies_dict[name] = {'is_valid': True, 'score': credibility, 'address': company_address}
+            return url, name, (True, credibility), product_name, product_image, product_price, company_address
         else:
             with lock:
-                companies_dict[name] = (False, 0)
-            return url, name, (False, 0), product_name, product_image, product_price
+                companies_dict[name] = {'is_valid': False, 'score': 0, 'address': company_address}
+            return url, name, (False, 0), product_name, product_image, product_price, company_address
 
     except Exception as e:
         return None
@@ -528,7 +634,13 @@ def search_products():
             for future in as_completed(future_to_product):
                 result = future.result()
                 if result:
-                    url, company_name, (is_valid, score), product_name, product_image, product_price = result
+                    # Handle both old format (6 items) and new format (7 items with address)
+                    if len(result) == 7:
+                        url, company_name, (is_valid, score), product_name, product_image, product_price, company_address = result
+                    else:
+                        url, company_name, (is_valid, score), product_name, product_image, product_price = result
+                        company_address = None
+                    
                     if is_valid:
                         valid_products.append({
                             'url': url,
@@ -536,11 +648,25 @@ def search_products():
                             'companyName': company_name,
                             'credibilityScore': score,
                             'imageUrl': product_image or '',
-                            'price': product_price if product_price is not None and isinstance(product_price, (int, float)) else None
+                            'price': product_price if product_price is not None and isinstance(product_price, (int, float)) else None,
+                            'companyAddress': company_address
                         })
         
         # Sort by credibility score
         valid_products.sort(key=lambda x: x['credibilityScore'], reverse=True)
+        
+        # Calculate distances if user location is provided
+        user_lat = data.get('userLatitude')
+        user_lon = data.get('userLongitude')
+        
+        if user_lat and user_lon:
+            for product in valid_products:
+                address = product.get('companyAddress')
+                if address:
+                    company_lat, company_lon = geocode_address(address)
+                    if company_lat and company_lon:
+                        distance = calculate_distance(user_lat, user_lon, company_lat, company_lon)
+                        product['distanceKm'] = distance
         
         # Save to search history
         add_to_search_history(prompt, len(valid_products))
