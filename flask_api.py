@@ -22,7 +22,7 @@ CORS(app)  # Enable CORS for frontend
 # Initialize Stripe (use environment variable in production)
 # IMPORTANT: Never commit your secret key to version control!
 # Set it via environment variable: export STRIPE_SECRET_KEY=sk_test_...
-stripe.api_key = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51SbXPE0K3XOps5QbrJJGSdqs8c8FMaE1sv69Dv6F0JxMNdfoXVyGDhPdjHy5sbXK1RfnmmaTQow3cjcUUxci4CON00IhmoaKv1')
+stripe.api_key = os.getenv('STRIPE_SECRET_KEY', '')
 
 SEARCH_HISTORY_FILE = 'search_history.json'
 
