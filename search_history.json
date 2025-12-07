@@ -133,5 +133,77 @@
     "prompt": "vreau si eu pantaloni verzi",
     "productCount": 5,
     "timestamp": "2025-12-07T06:52:50.454434"
+  },
+  {
+    "id": 22,
+    "prompt": "vreau tricouri  verzi",
+    "productCount": 22,
+    "timestamp": "2025-12-07T10:23:54.455265"
+  },
+  {
+    "id": 23,
+    "prompt": "vreau rosii de fapt",
+    "productCount": 25,
+    "timestamp": "2025-12-07T10:25:19.843430"
+  },
+  {
+    "id": 24,
+    "prompt": "vreau tricouri verzi",
+    "productCount": 0,
+    "timestamp": "2025-12-07T10:30:22.046332"
+  },
+  {
+    "id": 25,
+    "prompt": "vreau tricouri verzi",
+    "productCount": 0,
+    "timestamp": "2025-12-07T10:32:30.220129"
+  },
+  {
+    "id": 26,
+    "prompt": "vreau tricouri verzi",
+    "productCount": 7,
+    "timestamp": "2025-12-07T10:34:17.179254"
+  },
+  {
+    "id": 27,
+    "prompt": "vreau tricouri galbene",
+    "productCount": 43,
+    "timestamp": "2025-12-07T10:36:13.791707"
+  },
+  {
+    "id": 28,
+    "prompt": "m-am razgandit vreau verzi",
+    "productCount": 12,
+    "timestamp": "2025-12-07T10:37:02.682637"
+  },
+  {
+    "id": 29,
+    "prompt": "ba nu vreau negre",
+    "productCount": 16,
+    "timestamp": "2025-12-07T10:37:49.188373"
+  },
+  {
+    "id": 30,
+    "prompt": "vreau verzi si rosii",
+    "productCount": 5,
+    "timestamp": "2025-12-07T10:38:27.481654"
+  },
+  {
+    "id": 31,
+    "prompt": "m-am razgandit vreau negre",
+    "productCount": 5,
+    "timestamp": "2025-12-07T10:39:46.290666"
+  },
+  {
+    "id": 32,
+    "prompt": "vreau tricou verde",
+    "productCount": 0,
+    "timestamp": "2025-12-07T10:53:28.671982"
+  },
+  {
+    "id": 33,
+    "prompt": "vreau tricou verde",
+    "productCount": 0,
+    "timestamp": "2025-12-07T10:54:17.949997"
   }
 ]
